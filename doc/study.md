@@ -162,3 +162,6 @@ document.body.appendChild(greet).appendChild(text)
   - ページ内の要素にイベントを設定する
   - addEventListener('イベント', function)
 
+## JavaScriptの現在と今後
+- `https://qiita.com/shibukawa/items/19ab5c381bbb2e09d0d9`
+
