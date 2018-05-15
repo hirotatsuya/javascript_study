@@ -2,35 +2,33 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Hands On</title>
+  <title>handson</title>
 </head>
 <body>
   <h1>Hands On Question</h1>
   <hr />
-  <input
-    type="text"
-    id="input_text"
-  />
-  <button id="add_button">ADD</button>
-  <div id="new_text">
-    <p>sample text</p>
-  </div>
+  <input type="text" id="input_text" />
+  <button id="add_button">add</button>
+  <button id="clear_button">clear</button>
+  <p>sample text</p>
+  <div id="new_text"></div>
   <script>
     document.getElementById('add_button').addEventListener('click', function () {
       var inputText = document.getElementById('input_text').value
       if (!inputText) {
         alert('値が入力されていません。')
       } else {
-        addNewText(inputText)
+        var newText = document.getElementById('new_text')
+        var paragraph = document.createElement('p')
+        var text = document.createTextNode(inputText)
+        newText.appendChild(paragraph).appendChild(text)
         document.getElementById('input_text').value = ''
       }
     })
-    var addNewText = function (inputText) {
-      var newText = document.getElementById('new_text')
-      var paragraph = document.createElement('p')
-      var text = document.createTextNode(inputText)
-      newText.appendChild(paragraph).appendChild(text)
-    }
+    document.getElementById('clear_button').addEventListener('click', function () {
+      var removeText = document.getElementById('new_text')
+      while (removeText.firstChild) removeText.removeChild(removeText.firstChild);
+    })
   </script>
 </body>
 </html>
