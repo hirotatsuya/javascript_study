@@ -2,11 +2,11 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>handson</title>
+  <title>Hands On</title>
 </head>
 <body>
   <script>
-    // bodyのDOM取得
+    // bodyの取得
     var body = document.getElementsByTagName('body').item(0);
 
     // divの作成
@@ -74,7 +74,7 @@
     var clearButton = document.getElementById('clear_button');
     clearButton.addEventListener('click', function () {
       var removeText = document.getElementById('new_text');
-      while (removeText.firstChild) removeText.removeChild;(removeText.firstChild)
+      while (removeText.firstChild) removeText.removeChild(removeText.firstChild);
     })
   </script>
 </body>
