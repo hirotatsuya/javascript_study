@@ -24,7 +24,7 @@
 2. テキストフォームに値を入力して、addボタンを押下したときはsample textの下に入力した値が表示され、テキストフォームが空になる。
 3. 再び2を行うと、同じように入力した値が下に表示される。
 4. clearボタンを押下したときはsample textの下に表示されている値がすべて削除される。
-- ![動き](../../res/sample.gif "動き")
+- ![sample](./sample.gif "sample")
 
 ## 参考
 - `https://qiita.com/kouh/items/dfc14d25ccb4e50afe89`
