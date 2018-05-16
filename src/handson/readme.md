@@ -1,4 +1,4 @@
-## handson
+## Hands On
 - JavaScriptのみを用いて画面を作成する。
 - `level1.html`が完成形のコード。
 
