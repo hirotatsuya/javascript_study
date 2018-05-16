@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Hands On Level1</title>
+</head>
+<body>
+  <script>
+    // bodyの取得
+    var body = document.getElementsByTagName('body').item(0);
+
+    // divの作成
+    var div = document.createElement('div');
+    div.id = 'main';
+    body.appendChild(div);
+
+    // mainの取得
+    var main = document.getElementById('main');
+
+    // h1の作成
+    var element = document.createElement('h1');
+    element.innerHTML = 'Hands On Question';
+    main.appendChild(element);
+
+    // hrの作成
+    var hr = document.createElement('hr');
+    main.appendChild(hr);
+
+    // inputの作成
+    var input = document.createElement('input');
+    input.id = 'input_text';
+    input.type = 'text';
+    input.placeholder = 'text';
+    main.appendChild(input);
+
+    // addボタンの作成
+    var addButton = document.createElement('button');
+    addButton.id = 'add_button';
+    addButton.innerHTML = 'add';
+    main.appendChild(addButton);
+
+    // clearボタンの作成
+    var clearButton = document.createElement('button');
+    clearButton.id = 'clear_button';
+    clearButton.innerHTML = 'clear';
+    main.appendChild(clearButton);
+
+    // sample textの作成
+    var sampleText = document.createElement('p');
+    sampleText.innerHTML = 'sample text';
+    main.appendChild(sampleText);
+    
+    // 新しいテキストを追加する場所の作成
+    var newText = document.createElement('div');
+    newText.id = 'new_text';
+    main.appendChild(newText);
+
+    // addボタンが押下されたときの処理
+    var addButton = document.getElementById('add_button');
+    addButton.addEventListener('click', function () {
+      var inputText = document.getElementById('input_text').value;
+      if (!inputText) {
+        alert('値が入力されていません。');
+      } else {
+        var newText = document.getElementById('new_text');
+        var paragraph = document.createElement('p');
+        var text = document.createTextNode(inputText);
+        newText.appendChild(paragraph).appendChild(text);
+        document.getElementById('input_text').value = '';
+      }
+    });
+
+    // clearボタンが押下されたときの処理
+    var clearButton = document.getElementById('clear_button');
+    clearButton.addEventListener('click', function () {
+      var removeText = document.getElementById('new_text');
+      while (removeText.firstChild) removeText.removeChild(removeText.firstChild);
+    });
+  </script>
+</body>
+</html>

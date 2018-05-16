@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Hands On Level2</title>
+</head>
+<body>
+  <div id="main">
+      <h1>Hands On Question</h1>
+      <hr />
+      <input id="input_text" type="text" placeholder="text" />
+      <button id="add_button">add</button>
+      <button id="clear_button">clear</button>
+      <p>sample text</p>
+      <div id="new_text"></div>
+  </div>
+  <script>
+    // addボタンが押下されたときの処理
+    var addButton = document.getElementById('add_button');
+    addButton.addEventListener('click', function () {
+      // input_textに入力された値を取得する
+      var inputText = ???;
+
+      if (!inputText) {
+        // 「値が入力されていません。」というアラートを表示する。
+        ???
+      } else {
+        var newText = document.getElementById('new_text');
+        var paragraph = document.createElement('p');
+        var text = document.createTextNode(inputText);
+        // newTextの子要素としてparagraphとtextを追加する
+        newText.???(paragraph).???(text); // ???は同じものが入る
+        document.getElementById('input_text').value = '';
+      }
+    });
+
+    // clearボタンが押下されたときの処理
+    var clearButton = document.getElementById('clear_button');
+    clearButton.addEventListener('click', function () {
+      var removeText = document.getElementById('new_text');
+      while (removeText.firstChild) removeText.removeChild(removeText.firstChild);
+    });
+  </script>
+</body>
+</html>
