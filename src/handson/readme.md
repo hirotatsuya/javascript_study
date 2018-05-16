@@ -25,5 +25,8 @@
 3. 再び2を行うと、同じように入力した値が下に表示される。
 4. clearボタンを押下したときはsample textの下に表示されている値がすべて削除される。
 
+![動き](../../res/sample.gif "動き")
+![動き](../../res/sample.gif "動き")
+
 ## 参考
 - `https://qiita.com/kouh/items/dfc14d25ccb4e50afe89`
