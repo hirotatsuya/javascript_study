@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Hello World</title>
+  <script src="main.js"></script>
+</head>
+<body>
+  <button id="add">Click!</button>
+  <h1>Hello World!</h1>
+  <script>
+    // console.log("hello world!!!")
+    // alert("hello")
+    // confirm("How are you?")
+    // prompt("What's your name?")
+    // var hello = function (name) {
+    //   return "hello " + name;
+    // }
+    // console.log(hello("hirotatsu"))
+    // (function hello() {
+    //   console.log("hello")
+    // })()
+    // var i = 0
+    // function show () {
+    //   console.log(++i)
+    //   var tid = setTimeout (function () {
+    //     show ()
+    //   }, 1000)
+    //   if (tid > 5) {
+    //     clearTimeout(tid);
+    //   }
+    // }
+    // show(i)
+    // console.dir(window)
+    // console.log(window)
+    // console.log(window.outerHeight)
+    // window.location.href = 'https://hirotatsu.site'
+    document.getElementById('add').addEventListener('click', function () {
+      var greet = document.createElement('p')
+      var text = document.createTextNode('Hello')
+      document.body.appendChild(greet).appendChild(text)
+    })
+  </script>
+</body>
+</html>
