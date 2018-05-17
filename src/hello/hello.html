@@ -6,10 +6,16 @@
 </head>
 <body>
   <script>
-    // コンソール出力
+    // 1. コンソール出力
     console.log('Hello World!!!');
 
-    // DOM操作による出力
+    // 2. アラート出力
+    function hello (name) { // 関数の定義
+      window.alert('Hello' + name); // アラート出力
+    }
+    hello('World'); // 関数の実行
+
+    // 3. DOM操作による出力
     var element = document.createElement('h1'); // 要素の生成
     element.innerHTML = 'Hello World'; // 要素の子としてノードを割り当てる
     // element.textContent = 'Hello World';
