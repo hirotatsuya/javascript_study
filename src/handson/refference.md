@@ -15,7 +15,13 @@
   - https://developer.mozilla.org/ja/docs/Web/API/Node/appendChild
 - removeChild
   - https://developer.mozilla.org/ja/docs/Web/API/Node/removeChild
+- textContent
+  - https://developer.mozilla.org/ja/docs/Web/API/Node/textContent
 
 ## Event
 - addEventListener
   - https://developer.mozilla.org/ja/docs/Web/API/EventTarget/addEventListener
+
+## Window
+- alert
+  - https://developer.mozilla.org/ja/docs/Web/API/Window/alert

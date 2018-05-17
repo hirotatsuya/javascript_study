@@ -15,7 +15,7 @@ js勉強会のリポジトリ
       - ハンズオンで使うメソッド等のURLのまとめ
     - `sample.gif`
       - ハンズオンで作成するアプリケーションのイメージGIF
-  - helloworld
+  - hello
     - `hello.html`
       - 最初にJSを動かす部分をみんなでやるためのファイル
   - sample
