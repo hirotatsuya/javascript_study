@@ -163,5 +163,11 @@ document.body.appendChild(greet).appendChild(text)
   - addEventListener('イベント', function)
 
 ## JavaScriptの現在と今後
-- `https://qiita.com/shibukawa/items/19ab5c381bbb2e09d0d9`
+- https://qiita.com/shibukawa/items/19ab5c381bbb2e09d0d9
+
+## ECMAScriptとJS
+- https://app.codegrid.net/entry/ecmascript-1
+- MozillaがJSの仕様を策定
+- Ecma InternationalでECMAScriptとして標準化
+
 
